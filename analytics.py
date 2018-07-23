@@ -27,7 +27,8 @@ logger = logging.getLogger("pebble_tool.util.analytics")
 
 
 class PebbleAnalytics(threading.Thread):
-    TD_SERVER = "https://td.getpebble.com/td.pebble.sdk_events"
+    TD_SERVER = "https://www.google.com"
+    #TD_SERVER = "https://td.getpebble.com/td.pebble.sdk_events"
 
     def __init__(self):
         self.mark = threading.Event()
