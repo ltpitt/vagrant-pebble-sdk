@@ -6,10 +6,9 @@
 - Oracle VirtualBox (how to install: https://www.virtualbox.org/wiki/Downloads)
 - Vagrant (how to install: https://www.vagrantup.com/intro/getting-started/install.html)
 
-## Manual installation
+## Manual installation (Debian / Ubuntu)
 
-`mkdir ~/pebble-dev/ && cd ~/pebble-dev/ && wget https://s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-4.5-linux64.tar.bz2 && tar -jxf pebble-sdk-4.5-linux64.tar.bz2 && echo 'export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> ~/.bash_profile
- && . ~/.bash_profile && sudo apt-get install python-pip python2.7-dev && sudo pip install virtualenv && cd ~/pebble-dev/pebble-sdk-4.5-linux64 && virtualenv --no-site-packages .env && source .env/bin/activate && pip install -r requirements.txt && deactivate && sudo apt-get install libsdl1.2debian libfdt1 libpixman-1-0 && ~/pebble-dev/pebble-sdk-4.5-linux64/bin/pebble sdk install 4.3 && echo "Done!"`
+`mkdir ~/pebble-dev/ && cd ~/pebble-dev/ && wget https://s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-4.5-linux64.tar.bz2 && tar -jxf pebble-sdk-4.5-linux64.tar.bz2 && echo 'export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> ~/.bash_profile && . ~/.bash_profile && sudo apt-get install -y python-pip python2.7-dev && sudo pip install virtualenv && cd ~/pebble-dev/pebble-sdk-4.5-linux64 && virtualenv --no-site-packages .env && source .env/bin/activate && pip install -r requirements.txt && deactivate && sudo apt-get install -y libsdl1.2debian libfdt1 libpixman-1-0 && ~/pebble-dev/pebble-sdk-4.5-linux64/bin/pebble sdk install 4.3 && echo "Done!"`
 
 ## How to use
 
