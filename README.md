@@ -12,19 +12,19 @@
 
 ## Vagrant installation
 
-`git clone https://github.com/ltpitt/vagrant-pebble-sdk.git`
-`cd vagrant-pebble-sdk`
-`vagrant up`
-`vagrant ssh`
+`git clone https://github.com/ltpitt/vagrant-pebble-sdk.git`  
+`cd vagrant-pebble-sdk`  
+`vagrant up`  
+`vagrant ssh`  
 
 ## How to use
 
-To create a new Pebble project:
-`pebble new-project yourprojectname`
+To create a new Pebble project:  
+`pebble new-project yourprojectname`  
 
 
-To build it enter project folder and then:
-`pebble build`
+To build it enter project folder and then:  
+`pebble build`  
 
 Happy hacking :)
 
