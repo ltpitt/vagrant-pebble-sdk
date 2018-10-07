@@ -17,6 +17,10 @@
 `vagrant up`  
 `vagrant ssh`  
 
+## Docker
+I've also read that someone was able to complete a Docker container too, here's the link:  
+https://hub.docker.com/r/dmorgan81/rebble/
+
 ## How to use
 
 To create a new Pebble project:  
