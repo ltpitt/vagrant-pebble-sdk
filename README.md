@@ -32,6 +32,11 @@ To build it enter project folder and then:
 
 Happy hacking :)
 
+## Important note
+
+All Pebble important files no longer available on Amazon are available in this repo:  
+https://github.com/aveao/PebbleArchive
+
 ## Release History
 
 * 0.0.2
