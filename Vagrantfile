@@ -12,7 +12,7 @@ sudo apt-get install -y python-pip python2.7-dev libsdl1.2debian libfdt1 libpixm
 sudo pip install virtualenv
 mkdir /home/ubuntu/pebble-dev/
 cd /home/ubuntu/pebble-dev/
-wget http://www.davidenastri.it/pebble/pebble-sdk-4.5-linux64.tar.bz2
+wget https://developer.rebble.io/s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-4.5-linux64.tar.bz2
 tar -jxf pebble-sdk-4.5-linux64.tar.bz2
 echo 'export PATH=/home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> /home/ubuntu/.bash_profile
 echo 'clear' >> /home/ubuntu/.bash_profile
