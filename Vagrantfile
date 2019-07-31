@@ -30,6 +30,8 @@ cd /home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64
 sudo su - ubuntu
 virtualenv --no-site-packages .env
 source .env/bin/activate
+sed -i '$ d' requirements.txt
+echo https://github.com/ltpitt/vagrant-pebble-sdk/raw/master/pypkjs-1.0.6.tar.gz >> requirements.txt
 pip install -r requirements.txt
 deactivate
 cd /home/ubuntu
@@ -48,17 +50,3 @@ SCRIPT
   end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
