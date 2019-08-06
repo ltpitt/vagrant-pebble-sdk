@@ -1,5 +1,5 @@
-# Pebble SDK local installer / Vagrant machine
-> This repo contains how to manually install the key components of Pebble SDK as submodules into a Vagrant Linux VM or on your pc.
+# Pebble SDK Vagrant machine
+> This repo contains how to quickly install Pebble SDK into a Vagrant Linux VM or on your Windows / Linux / Mac.
 
 ## Prerequisites for Vagrant (if you need / want a virtual machine)
 
@@ -13,10 +13,6 @@
 `vagrant up`  
 `vagrant ssh`  
 
-## Docker
-I've also read that someone was able to complete a Docker container too, here's the link:  
-https://hub.docker.com/r/dmorgan81/rebble/
-
 ## How to use
 
 To create a new Pebble project:  
@@ -25,10 +21,14 @@ To create a new Pebble project:
 To build it enter project folder and then:  
 `pebble build`  
 
-## Important note
+## Notes
 
-All Pebble important files no longer available on Amazon are available in this repo:  
+All Pebble important files no longer available on Amazon are available in this repo but also have a mirror here:  
 https://github.com/aveao/PebbleArchive
+
+## Docker
+I've also read that someone was able to complete a Docker container too, here's the link:  
+https://hub.docker.com/r/dmorgan81/rebble/
 
 ## Release History
 
