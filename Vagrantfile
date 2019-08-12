@@ -48,6 +48,8 @@ rm -f $file_path && mv analytics.py $dir_path
 cd /home/ubuntu
 wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk.tar.gz
 tar -xvvf pebble-sdk.tar.gz
+git clone https://github.com/ltpitt/pebblejs.git
+chown ubuntu:ubuntu /home/ubuntu -R
 echo "Done!"
 SCRIPT
 
