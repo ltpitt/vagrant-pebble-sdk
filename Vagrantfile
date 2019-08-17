@@ -21,13 +21,7 @@ unzip pebble-sdk-4.5-linux64.tar.zip
 tar -jxf pebble-sdk-4.5-linux64.tar.bz2
 echo 'export PATH=/home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> /home/ubuntu/.bash_profile
 echo 'clear' >> /home/ubuntu/.bash_profile
-echo 'echo Welcome in your new Pebble Dev Vagrant Machine.' >> /home/ubuntu/.bash_profile
-echo 'echo ' >> /home/ubuntu/.bash_profile
-echo 'echo To create a new Pebble project:' >> /home/ubuntu/.bash_profile
-echo 'echo pebble new-project yourprojectname' >> /home/ubuntu/.bash_profile
-echo 'echo ' >> /home/ubuntu/.bash_profile
-echo 'echo to build it enter project folder and then:' >> /home/ubuntu/.bash_profile
-echo 'echo pebble build' >> /home/ubuntu/.bash_profile
+echo 'echo Welcome in your Pebble Dev Vagrant Machine.' >> /home/ubuntu/.bash_profile
 echo 'echo ' >> /home/ubuntu/.bash_profile
 echo 'echo Have fun, happy hacking.' >> /home/ubuntu/.bash_profile
 echo 'echo ' >> /home/ubuntu/.bash_profile
