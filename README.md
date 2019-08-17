@@ -21,6 +21,14 @@ To create a new Pebble project:
 To build it enter project folder and then:  
 `pebble build`  
 
+If you want to create a PebbleJs project you can use the pebblejs folder available in /home/ubuntu/pebblejs  
+`cd pebblejs`
+
+To build it the available example just type:  
+`pebble build`  
+
+In order to add your code change the /home/ubuntu/pebblejs/src/js/app.js file
+
 ## Notes
 
 All Pebble important files no longer available on Amazon are available in this repo but also have a mirror here:  
