@@ -27,9 +27,9 @@ If you want to create a PebbleJs project you can use the pebblejs folder availab
 To build it the available example just type:  
 `pebble build`  
 
-In order to write your PebbleJs app edit:
+In order to write your PebbleJs app edit:  
 `/home/ubuntu/pebblejs/appinfo.json`  
-and write your code in:
+and write your code in:  
 `/home/ubuntu/pebblejs/src/js/app.js`  
 
 ## Notes
