@@ -32,9 +32,20 @@ In order to write your PebbleJs app edit:
 and write your code in:  
 `/home/ubuntu/pebblejs/src/js/app.js`  
 
+## Learning Material
+
+In the repo you will also find learning-c-with-pebble.pdf and pebble-development-with-javascript.pdf.  
+The first file will help not only to learn writing apps for Pebble but also a good foundation of the C language.  
+I downloaded the pdf from the gitbook page here:  
+https://legacy.gitbook.com/book/pebble/learning-c-with-pebble/details  
+
+The pebble-development-with-javascript.pdf  is just a simple introduction about how to write an app with Javascript on Pebble thanks to PebbleJS.  
+I've found an interesting website with a good tutorial (and saved it in pdf form) here:  
+https://www.sitepoint.com/pebble-watch-development-javascript/  
+
 ## Notes
 
-All Pebble important files no longer available on Amazon are available in this repo but also have a mirror here:  
+All Pebble important files no longer available on Amazon but they are now available in this repo and also have a mirror here:  
 https://github.com/aveao/PebbleArchive
 
 ## Docker
