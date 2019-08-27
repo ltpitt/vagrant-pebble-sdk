@@ -1,7 +1,7 @@
 # Pebble SDK Vagrant machine
 > This repo contains how to quickly install Pebble SDK into a Vagrant Linux VM or on your Windows / Linux / Mac.
 
-## Prerequisites for Vagrant (if you need / want a virtual machine)
+## Prerequisites for Vagrant  
 
 - Oracle VirtualBox (how to install: https://www.virtualbox.org/wiki/Downloads)
 - Vagrant (how to install: https://www.vagrantup.com/intro/getting-started/install.html)
