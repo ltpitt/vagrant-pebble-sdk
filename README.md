@@ -15,6 +15,10 @@
 
 ## How to use
 
+Be sure that you are using the ubuntu user in the local machine, in case you are not using the ubuntu user the Pebble SDK will not work.  
+Switch to the ubuntu user with this command:  
+`sudo su - ubuntu`
+
 To create a new Pebble project:  
 `pebble new-project yourprojectname`  
 
