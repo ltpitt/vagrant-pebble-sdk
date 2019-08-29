@@ -2,8 +2,14 @@
 # vi: set ft=ruby :
 
 ## Changelog ##
+# 0.0.3 - Added code to always do vagrant ssh as ubuntu user
 # 0.0.2 – Embedded in the repo all the Pebble dependencies
 # 0.0.1 – First working version
+
+VAGRANT_COMMAND = ARGV[0]
+if VAGRANT_COMMAND == "ssh"
+  config.ssh.username = 'ubuntu'
+end
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
