@@ -14,45 +14,48 @@ end
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   $provisioningscript = <<SCRIPT
-sudo apt-get update
-sudo apt-get install -y python-pip python2.7-dev libsdl1.2debian libfdt1 libpixman-1-0
-sudo apt-get install -y unzip
-sudo pip install virtualenv
-mkdir /home/ubuntu/pebble-dev/
-cd /home/ubuntu/pebble-dev/
-wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk-4.5-linux64.tar.zip.001
-wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk-4.5-linux64.tar.zip.002
-cat pebble-sdk-4.5-linux64.tar.zip.00* > pebble-sdk-4.5-linux64.tar.zip
-unzip pebble-sdk-4.5-linux64.tar.zip
-tar -jxf pebble-sdk-4.5-linux64.tar.bz2
-echo 'export PATH=/home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> /home/ubuntu/.bash_profile
-echo 'clear' >> /home/ubuntu/.bash_profile
-echo 'echo Welcome in your Pebble Dev Vagrant Machine.' >> /home/ubuntu/.bash_profile
-echo 'echo ' >> /home/ubuntu/.bash_profile
-echo 'echo Have fun, happy hacking.' >> /home/ubuntu/.bash_profile
-echo 'echo ' >> /home/ubuntu/.bash_profile
-. /home/ubuntu/.bash_profile
-cd /home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64
-sudo su - ubuntu
-virtualenv --no-site-packages .env
-source .env/bin/activate
-sed -i '$ d' requirements.txt
-echo https://github.com/ltpitt/vagrant-pebble-sdk/raw/master/pypkjs-1.0.6.tar.gz >> requirements.txt
-pip install -r requirements.txt
-deactivate
-cd /home/ubuntu
-file_path=$(find . -name "analytics.py")
-dir_path=$(dirname $file_path)
-wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/analytics.py
-rm -f $file_path && mv analytics.py $dir_path
-cd /home/ubuntu
-wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk.tar.gz
-tar -xvvf pebble-sdk.tar.gz
-git clone https://github.com/ltpitt/pebblejs.git
-chown ubuntu:ubuntu /home/ubuntu -R
-echo "Done!"
+    # Steps to install Pebble SDK and PebbleJs for ubuntu user on the virtual machine
+    sudo apt-get update
+    sudo apt-get install -y python-pip python2.7-dev libsdl1.2debian libfdt1 libpixman-1-0
+    sudo apt-get install -y unzip
+    sudo pip install virtualenv
+    mkdir /home/ubuntu/pebble-dev/
+    cd /home/ubuntu/pebble-dev/
+    wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk-4.5-linux64.tar.zip.001
+    wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk-4.5-linux64.tar.zip.002
+    cat pebble-sdk-4.5-linux64.tar.zip.00* > pebble-sdk-4.5-linux64.tar.zip
+    unzip pebble-sdk-4.5-linux64.tar.zip
+    tar -jxf pebble-sdk-4.5-linux64.tar.bz2
+    echo 'export PATH=/home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> /home/ubuntu/.bash_profile
+    echo 'clear' >> /home/ubuntu/.bash_profile
+    echo 'echo Welcome in your Pebble Dev Vagrant Machine.' >> /home/ubuntu/.bash_profile
+    echo 'echo ' >> /home/ubuntu/.bash_profile
+    echo 'pebble --version' >> /home/ubuntu/.bash_profile
+    echo 'echo Have fun, happy hacking.' >> /home/ubuntu/.bash_profile
+    echo 'echo ' >> /home/ubuntu/.bash_profile
+    . /home/ubuntu/.bash_profile
+    cd /home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64
+    sudo su - ubuntu
+    virtualenv --no-site-packages .env
+    source .env/bin/activate
+    sed -i '$ d' requirements.txt
+    echo https://github.com/ltpitt/vagrant-pebble-sdk/raw/master/pypkjs-1.0.6.tar.gz >> requirements.txt
+    pip install -r requirements.txt
+    deactivate
+    cd /home/ubuntu
+    file_path=$(find . -name "analytics.py")
+    dir_path=$(dirname $file_path)
+    wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/analytics.py
+    rm -f $file_path && mv analytics.py $dir_path
+    cd /home/ubuntu
+    wget https://raw.githubusercontent.com/ltpitt/vagrant-pebble-sdk/master/pebble-sdk.tar.gz
+    tar -xvvf pebble-sdk.tar.gz
+    git clone https://github.com/ltpitt/pebblejs.git
+    chown ubuntu:ubuntu /home/ubuntu -R
+    echo "Provisioning complete, be sure to read README.md if you don't know where to start."
 SCRIPT
 
+  # Perform provisioning just once
   config.vm.provision "shell", run: "once" do |s|
     s.inline= $provisioningscript
   end
