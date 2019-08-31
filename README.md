@@ -6,7 +6,7 @@
 - Oracle VirtualBox (how to install: https://www.virtualbox.org/wiki/Downloads)
 - Vagrant (how to install: https://www.vagrantup.com/intro/getting-started/install.html)
 
-## Vagrant installation
+## Installation
 
 `git clone https://github.com/ltpitt/vagrant-pebble-sdk.git`  
 `cd vagrant-pebble-sdk`  
