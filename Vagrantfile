@@ -6,8 +6,6 @@
 # 0.0.2 – Embedded in the repo all the Pebble dependencies
 # 0.0.1 – First working version
 
-
-
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   
