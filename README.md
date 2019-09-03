@@ -15,23 +15,20 @@
 
 ## How to use
 
-Be sure that you are using the ubuntu user in the local machine, in case you are not using the ubuntu user the Pebble SDK will not work.  
+Always sure that you are using the ubuntu user in the local machine, in case you are not using the ubuntu user the Pebble SDK will not work.  
+
 Switch to the ubuntu user with this command:  
 `sudo su - ubuntu`
 
 To create a new Pebble project:  
 `pebble new-project yourprojectname`  
 
-To build it enter project folder and then:  
+To build a project enter its folder and use:  
 `pebble build`  
 
-If you want to create a PebbleJs project you can use the pebblejs folder available in /home/ubuntu/pebblejs  
-`cd pebblejs`
+If you want to create a PebbleJs project you can use the pebblejs template folder available in /home/ubuntu/pebblejs  
 
-To build it the available example just type:  
-`pebble build`  
-
-In order to write your PebbleJs app edit:  
+All you need to do is customize:  
 `/home/ubuntu/pebblejs/appinfo.json`  
 and write your code in:  
 `/home/ubuntu/pebblejs/src/js/app.js`  
@@ -39,12 +36,12 @@ and write your code in:
 ## Learning Material
 
 In the repo you will also find learning-c-with-pebble.pdf and pebble-development-with-javascript.pdf.  
-The first file will help not only to learn writing apps for Pebble but also a good foundation of the C language.  
+learning-c-with-pebble.pdf will help not only to learn writing apps for Pebble but also a good foundation of the C language.  
 I downloaded the pdf from the gitbook page here:  
 https://legacy.gitbook.com/book/pebble/learning-c-with-pebble/details  
 
-The pebble-development-with-javascript.pdf  is just a simple introduction about how to write an app with Javascript on Pebble thanks to PebbleJS.  
-I've found an interesting website with a good tutorial (and saved it in pdf form) here:  
+The pebble-development-with-javascript.pdf is just a simple introduction about how to write an app with Javascript on Pebble thanks to PebbleJS.  
+pebble-development-with-javascript.pdf is just a good tutorial I've found and saved as pdf. Original tutorial is available here:  
 https://www.sitepoint.com/pebble-watch-development-javascript/  
 
 ## Notes
