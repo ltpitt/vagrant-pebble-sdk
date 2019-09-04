@@ -55,6 +55,9 @@ https://hub.docker.com/r/dmorgan81/rebble/
 
 ## Release History
 
+* 0.0.3
+    * Added code to always do vagrant ssh as ubuntu user
+
 * 0.0.2
     * Added files that were taken down from Fitbit to the repo
 
