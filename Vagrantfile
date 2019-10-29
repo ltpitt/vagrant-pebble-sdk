@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   
   VAGRANT_COMMAND = ARGV[0]
   if VAGRANT_COMMAND == "ssh"
-    config.ssh.username = 'ubuntu'
+    config.ssh.username = 'vagrant'
   end
   
   $provisioningscript = <<SCRIPT
