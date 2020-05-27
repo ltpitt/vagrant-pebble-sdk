@@ -66,7 +66,7 @@ https://hub.docker.com/r/dmorgan81/rebble/
 
 ## Meta
 
-Davide Nastri – [@pitto](https://twitter.com/pitto) – d.nastri@gmail.com
+Davide Nastri – d.nastri@gmail.com
 
 Distributed under the GPL license. See ``LICENSE`` for more information.
 
