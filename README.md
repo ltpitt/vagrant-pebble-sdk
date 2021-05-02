@@ -1,3 +1,9 @@
+[![GitHub Issues](https://img.shields.io/github/issues-raw/ltpitt/vagrant-pebble-sdk)](https://github.com/ltpitt/vagrant-pebble-sdk/issues)
+[![Total Commits](https://img.shields.io/github/last-commit/ltpitt/vagrant-pebble-sdk)](https://github.com/ltpitt/vagrant-pebble-sdk/commits)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/4w/ltpitt/vagrant-pebble-sdk?foo=bar)](https://github.com/ltpitt/vagrant-pebble-sdk/commits)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ltpitt/vagrant-pebble-sdk/blob/master/LICENSE)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+
 # Pebble SDK Vagrant machine
 > This repo contains how to quickly install Pebble SDK into a Vagrant Linux VM or on your Windows / Linux / Mac.
 
