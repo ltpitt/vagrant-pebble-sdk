@@ -61,6 +61,9 @@ https://hub.docker.com/r/dmorgan81/rebble/
 
 ## Release History
 
+* 0.0.4
+    * Fixed issue in installing virtualenv that prevented successful provisioning
+
 * 0.0.3
     * Added code to always do vagrant ssh as ubuntu user
 
