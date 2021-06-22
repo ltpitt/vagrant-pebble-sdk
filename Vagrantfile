@@ -52,17 +52,15 @@ Vagrant.configure("2") do |config|
     echo 'echo Have fun, happy hacking.' >> /home/ubuntu/.bash_profile
     echo 'echo ' >> /home/ubuntu/.bash_profile	
     echo "Provisioning complete, be sure to read README.md if you don't know where to start."
-	echo "sudo su - ubuntu" >> /home/vagrant/.bash_profile
-	
+    echo "sudo su - ubuntu" >> /home/vagrant/.bash_profile
     echo 'cd /home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64' >> /home/ubuntu/install.sh
     echo 'virtualenv --no-site-packages .env' >> /home/ubuntu/install.sh
     echo 'source .env/bin/activate' >> /home/ubuntu/install.sh
     echo 'sed -i '$ d' requirements.txt' >> /home/ubuntu/install.sh	
     echo 'echo 'https://github.com/ltpitt/vagrant-pebble-sdk/raw/master/pypkjs-1.0.6.tar.gz' | cat - requirements.txt > temp && mv temp requirements.txt' >> /home/ubuntu/install.sh
     echo 'pip install -r requirements.txt' >> /home/ubuntu/install.sh
-	echo 'deactivate' >> /home/ubuntu/install.sh
-	echo "echo Install complete, be sure to read README.md if you don't know where to start." >> /home/ubuntu/install.sh
-	
+    echo 'deactivate' >> /home/ubuntu/install.sh
+    echo "echo Install complete, be sure to read README.md if you don't know where to start." >> /home/ubuntu/install.sh
 SCRIPT
 
   # Perform provisioning just once
