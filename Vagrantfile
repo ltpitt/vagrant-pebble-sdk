@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     tar -jxf pebble-sdk-4.5-linux64.tar.bz2
     echo 'export PATH=/home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH' >> /home/ubuntu/.bash_profile
     chown ubuntu:ubuntu /home/ubuntu -R
-	sudo su - ubuntu
+    sudo su - ubuntu
     cd /home/ubuntu/pebble-dev/pebble-sdk-4.5-linux64
     virtualenv --no-site-packages .env
     source .env/bin/activate
