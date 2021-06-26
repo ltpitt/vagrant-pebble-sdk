@@ -21,9 +21,9 @@
 
 ## How to use
 
-Always sure that you are using the ubuntu user in the local machine, in case you are not using the ubuntu user the Pebble SDK will not work.  
+The VM is configured to automatically switch to ubuntu user when you connect. Always be sure that you are using the ubuntu user in the local machine, otherwise the Pebble SDK will not work.  
 
-Switch to the ubuntu user with this command:  
+In case your user is not switched automatically to the ubuntu user you can do it manually with this command:  
 `sudo su - ubuntu`
 
 To create a new Pebble project:  
