@@ -5,7 +5,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # Pebble SDK Vagrant machine
-> This repo contains how to quickly install Pebble SDK into a Vagrant (what is Vagrant: https://www.vagrantup.com/intro) Ubuntu Linux VM.
+> This repo allows to quickly install a functional Pebble SDK in a Vagrant (what is Vagrant: https://www.vagrantup.com/intro) Ubuntu Linux virtual machine.
 
 ## Prerequisites for Vagrant  
 
