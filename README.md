@@ -5,13 +5,13 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # Pebble SDK Vagrant machine
-> This repo allows to install a functional Pebble SDK in a Vagrant (more information about (Vagrant)[https://www.vagrantup.com/intro]) Ubuntu Linux virtual machine.  
+> This repo allows to install a functional Pebble SDK in a Vagrant (more information about [Vagrant](https://www.vagrantup.com/intro)) Ubuntu Linux virtual machine.  
 > Once installed it will be possible to develop Pebble applications written in C or Javascript.  
 
 ## Prerequisites for Vagrant  
 
-- Oracle VirtualBox (how to install)[https://www.virtualbox.org/wiki/Downloads]
-- Vagrant (how to install)[https://www.vagrantup.com/intro/getting-started/install.html]
+- Oracle VirtualBox [how to install](https://www.virtualbox.org/wiki/Downloads)
+- Vagrant [how to install](https://www.vagrantup.com/intro/getting-started/install.html)
 
 ## Installation
 
