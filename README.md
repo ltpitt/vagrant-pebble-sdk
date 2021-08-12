@@ -5,8 +5,8 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # Pebble SDK Vagrant machine
-> This repo allows to install a functional Pebble SDK in a Vagrant (more information about [Vagrant](https://www.vagrantup.com/intro)) Ubuntu Linux virtual machine.  
-> Once installed it will be possible to develop Pebble applications written in C or Javascript.  
+> This repo allows to install a functional Pebble SDK in a Vagrant ([more about Vagrant](https://www.vagrantup.com/intro)) Ubuntu Linux virtual machine.  
+> Once installed it will be possible to develop Pebble applications written in C or Javascript and send them to your smartwatch.  
 
 ## Prerequisites for Vagrant  
 
