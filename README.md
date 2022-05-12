@@ -10,8 +10,8 @@
 
 ## Prerequisites for Vagrant  
 
-- Oracle VirtualBox [how to install](https://www.virtualbox.org/wiki/Downloads)
-- Vagrant [how to install](https://www.vagrantup.com/intro/getting-started/install.html)
+- Oracle VirtualBox - [How to install](https://www.virtualbox.org/wiki/Downloads)
+- Vagrant - [How to install](https://www.vagrantup.com/intro/getting-started/install.html)
 
 ## Installation
 
