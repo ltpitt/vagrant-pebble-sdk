@@ -40,7 +40,7 @@ All you need to do is customize:
 and write your code in:  
 `/home/ubuntu/pebblejs/src/js/app.js`  
 
-If you want a freshly scaffolded and correctly building / installing PebbleJs project you can use:
+If you want a freshly scaffolded and correctly building / installing PebbleJs project you can use:  
 `git clone https://github.com/ltpitt/pebblejs.git`
 
 ## Learning Material
