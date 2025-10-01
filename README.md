@@ -40,6 +40,9 @@ All you need to do is customize:
 and write your code in:  
 `/home/ubuntu/pebblejs/src/js/app.js`  
 
+If you want a freshly scaffolded and correctly building / installing PebbleJs project you can use:
+`git clone https://github.com/ltpitt/pebblejs.git`
+
 ## Learning Material
 
 In the repo you will also find learning-c-with-pebble.pdf and pebble-development-with-javascript.pdf.  
